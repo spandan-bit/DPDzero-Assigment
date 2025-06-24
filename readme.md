@@ -50,11 +50,16 @@ You are expected to set up a simple system where:
 ```
 
 ---
+## 🚀 Run with Docker Compose (from GitHub)
 
-### 📦 Tech Constraints
+You can build and run the entire backend stack with a single command, using the docker-compose file directly from this repository:
 
-* Nginx must run in a Docker container, not on host
-* Use bridge networking (no host networking)
+```bash
+docker compose -f https://raw.githubusercontent.com/spandan-bit/DPDzero-Assigment/main/docker-compose.yml up --build
+```
+
+- Make sure you have Docker and Docker Compose installed.
+- This command will fetch the compose file from GitHub, build all services, and start the stack.
 
 
 
